@@ -1,4 +1,4 @@
-#include "Cpu.h"  /* interface to CPU, do not removed  */
+#include "Cpu.h"  /* interface to CPU, do not remove */
 
 int main(void) {
   PE_low_level_init(); /* low level driver initialization, do not remove */

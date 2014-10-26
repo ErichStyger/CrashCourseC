@@ -1,4 +1,4 @@
-#include "Cpu.h"  /* interface to CPU, do not removed  */
+#include "Cpu.h"  /* interface to CPU, do not remove */
 #include "WAIT1.h"  /* waiting routines  */
 #include "LEDB.h"   /* blueLED */
 
