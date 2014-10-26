@@ -21,3 +21,5 @@ del /Q .\application.s19
 
 @REM Generating S19 File
 %OCP% %OCP_OPTIONS% %OBJ_PATH%\application.elf %OBJ_PATH%\application.s19
+
+pause

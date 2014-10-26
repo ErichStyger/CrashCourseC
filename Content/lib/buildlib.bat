@@ -34,3 +34,5 @@ del /Q %OBJ_PATH%\*.a
 REM Build library
 %AR% %AR_OPTIONS% %OBJ_PATH%/libkl25z.a %OBJ_PATH%/startup.o %OBJ_PATH%/Vectors.o %OBJ_PATH%/IO1.o %OBJ_PATH%/CsIO1.o %OBJ_PATH%/Cpu.o %OBJ_PATH%/Events.o %OBJ_PATH%/WAIT1.o %OBJ_PATH%/LEDR.o %OBJ_PATH%/LEDG.o %OBJ_PATH%/LEDB.o %OBJ_PATH%/BitIoLDD1.o %OBJ_PATH%/BitIoLDD2.o %OBJ_PATH%/BitIoLDD3.o %OBJ_PATH%/LEDpin1.o %OBJ_PATH%/LEDpin2.o %OBJ_PATH%/LEDpin3.o %OBJ_PATH%/PE_LDD.o
 del /Q %OBJ_PATH%\*.o
+
+pause
