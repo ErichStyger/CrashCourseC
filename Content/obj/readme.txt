@@ -1,0 +1,1 @@
+This folder contains the object files, library and application files.

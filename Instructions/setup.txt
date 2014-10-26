@@ -1,0 +1,8 @@
+How to setup the enviroment:
+- download the launchpad GNU ARM tools from https://launchpad.net/gcc-arm-embedded:
+  for Windows:
+  https://launchpad.net/gcc-arm-embedded/4.8/4.8-2014-q3-update/+download/gcc-arm-none-eabi-4_8-2014q3-20140805-win32.zip
+  There are corresponding archive files for Mac and Linux availble.
+- unpack the archive to
+  ..\toolchain
+
