@@ -1,2 +1,2 @@
 This folder contains the launchpad 4.8-2014-q3 toolchain.
-See ..\setup\readme.txt
+See ..\..\Instructions\setup.txt
