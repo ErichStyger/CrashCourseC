@@ -5,6 +5,7 @@ Setup of toolchain:
   There are corresponding archive files for Mac and Linux availble.
 - unpack the archive to
   ..\toolchain
+- install gcc-arm-none-eabi via packet manager
 
 
 Setup of FRDM-KL25Z Board:
