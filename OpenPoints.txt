@@ -1,4 +1,4 @@
 Open Points
 -----------
-- USB CDC drivers for Linux (from KDS Linux)
+- USB CDC drivers for Linux (from KDS Linux) -> No additional driver needed
 - USB CDC drivers for Mac?
