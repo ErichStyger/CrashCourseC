@@ -2,3 +2,5 @@
 /bin
 /lib
 /share
+/gcc-arm-none-eabi-4_8-2014q3
+*.tar.bz2
