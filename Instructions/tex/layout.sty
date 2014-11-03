@@ -1,0 +1,188 @@
+% Layouteinstellungen für alle Dokumente
+
+% Encoding
+    \usepackage[utf8]{inputenc} % für input utf8
+    \usepackage[T1]{fontenc}    % Schriftcodierung mit UTF-8
+    \usepackage{textcomp}       % Erweiterung von fontenc
+    \usepackage{lmodern}        % Erweiterung des Zeichensatzes
+
+% Anpassungen für die Deutsche
+    \usepackage[ngerman]{babel} % Neue deutsche Rechtschreibung
+
+% Seiteneinstellungen
+    \usepackage{lscape}         % Einzelne Seiten im Querformat
+    \usepackage{pdflscape}      % Einzelne Seiten im Querformat (bessere Lesbarkeit)
+
+% Farben
+    \usepackage{color}          % Farben
+    \usepackage{colortbl}       % Tabellen einfärben
+    \usepackage[table]{xcolor}  % 
+
+% Eigene definierte Farben
+    \definecolor{gray}      {gray}  {0.749}
+    \definecolor{lgray}     {gray}  {0.85}
+    \definecolor{red}       {rgb}   {1 ,  0  , 0}
+    \definecolor{green}     {rgb}   {0 ,  1  , 0}
+    \definecolor{blue}      {rgb}   {0 ,  0  , 1}
+    \definecolor{darkgreen} {rgb}   {0 , 0.6 , 0}
+
+% Tabellen
+    \usepackage{longtable}      % Seitenübergreifende Tabellen
+    \usepackage{multirow}       % Zeilen zusammenfassen
+
+% Eigene Tabellen
+    % Hellgrau und weiss abwechselnd
+    \newenvironment{zebratabular}{\rowcolors{2}{lgray}{white}\tabular}{\endtabular}
+    \newenvironment{zebralongtable}{\rowcolors{2}{lgray}{white}\longtable}{\endlongtable}
+
+% Grafiken
+    \usepackage{graphicx}       % Grafiken einbinden
+    \usepackage{pdfpages}       % PDF Seiten einbinden
+    \usepackage{caption}        % Bildunterschrift
+    \usepackage{subcaption}     % Bildunterschrift unter zusammen dargestellten Bildern
+    \usepackage{tikz}           % TikZ - "TikZ ist kein Zeichenprogramm"
+        \usetikzlibrary{tikzmark}   % References for hooking tikz graphics to
+
+% Mathematik
+    \usepackage{amsmath}        % Strukturierung von Formeln
+    \usepackage{amssymb}        % Sonderzeichen für Formeln
+
+% Verweise
+    \usepackage{makeidx}        % Index
+    \usepackage{hyperref}       % Verlinkte interne und externe Verweise
+
+% Source-Code Paket
+    \usepackage{listings}
+    \lstset{language=C}
+    \lstloadlanguages{C}
+    \lstset{basicstyle=\ttfamily,
+        numbers=left,
+        numberstyle=\tiny, 
+        numbersep=5pt,
+        breaklines=true,
+        %texcsstyle=\color{black},
+        backgroundcolor=\color{gray!10},
+        commentstyle=\color{darkgreen},
+        keywordstyle=\color{red}\bfseries,
+        stringstyle=\color{blue}\bfseries,
+        frame=single,
+        tabsize=4,
+        rulecolor=\color{black!30},
+        title=\lstname,
+        escapeinside={\%*}{*)},
+        breaklines=true,
+        breakatwhitespace=true,
+        framextopmargin=2pt,
+        framexbottommargin=2pt,
+        inputencoding=utf8,
+        extendedchars=true,
+        literate={Ö}{{\"O}}1
+                 {Ä}{{\"A}}1
+                 {Ü}{{\"U}}1
+                 {ü}{{\"u}}1
+                 {ä}{{\"a}}1
+                 {ö}{{\"o}}1 }
+
+% Darstellung von verschiedenen Sprachen
+
+    % LaTeX
+    \newcommand\lstsettinglatex{
+        \lstset{language=[LaTeX]TeX}
+        \lstloadlanguages{TeX}
+        \lstset{basicstyle=\ttfamily,
+            numbers=left,
+            numberstyle=\tiny, 
+            numbersep=5pt,
+            breaklines=true,
+            texcsstyle=\color{blue},
+            backgroundcolor=\color{gray!10},
+            commentstyle=\color{darkgreen},
+            keywordstyle=\color{red}\bfseries,
+            stringstyle=\color{blue}\bfseries,
+            frame=single,
+            tabsize=4,
+            rulecolor=\color{black!30},
+            title=\lstname,
+            escapeinside={\%*}{*)},
+            breaklines=true,
+            breakatwhitespace=true,
+            framextopmargin=2pt,
+            framexbottommargin=2pt,
+            inputencoding=utf8,
+            extendedchars=true,
+            literate={Ö}{{\"O}}1
+                     {Ä}{{\"A}}1
+                     {Ü}{{\"U}}1
+                     {ü}{{\"u}}1
+                     {ä}{{\"a}}1
+                     {ö}{{\"o}}1 }
+    }
+
+    % C
+    \newcommand\lstsettingc{
+        \lstset{language=C}
+        \lstloadlanguages{C}
+        \lstset{basicstyle=\ttfamily,
+            numbers=left,
+            numberstyle=\tiny, 
+            numbersep=5pt,
+            breaklines=true,
+            texcsstyle=\color{black},
+            backgroundcolor=\color{gray!10},
+            commentstyle=\color{darkgreen},
+            keywordstyle=\color{red}\bfseries,
+            stringstyle=\color{blue}\bfseries,
+            frame=single,
+            tabsize=4,
+            rulecolor=\color{black!30},
+            title=\lstname,
+            escapeinside={\%*}{*)},
+            breaklines=true,
+            breakatwhitespace=true,
+            framextopmargin=2pt,
+            framexbottommargin=2pt,
+            inputencoding=utf8,
+            extendedchars=true,
+            literate={Ö}{{\"O}}1
+                     {Ä}{{\"A}}1
+                     {Ü}{{\"U}}1
+                     {ü}{{\"u}}1
+                     {ä}{{\"a}}1
+                     {ö}{{\"o}}1 }
+    }
+
+% Bedingungen
+    \usepackage{ifthen}     % Verzweigungen
+    \newboolean{en}
+    \newboolean{de}
+
+% Benutzerdefinierte Kopf- und Fusszeile
+    \usepackage{fancyhdr}   % http://en.wikibooks.org/wiki/LaTeX/Page_Layout#Customising_with_fancyhdr
+
+% Ränder
+    % TODO: Define all dimensions below!!!
+    % \addtolength{\textheight}{3.5cm}
+    % \addtolength{\voffset}{-1.5cm}
+    % \addtolength{\textwidth}{1cm}
+    % \addtolength{\evensidemargin}{-15mm}
+    % \addtolength{\oddsidemargin}{5mm}
+
+    % \addtolength{\textheight}{\topmargin-\evensidemargin-\hoffset+\voffset}
+    % \setlength{\topmargin}{\evensidemargin+\hoffset-\voffset}
+
+    % \addtolength{\headwidth}{1cm}
+
+%  Inhalt Kopf- und Fusszeile
+    \pagestyle{fancy}                           % eigener Seitenstil
+    \fancyhf{}                                  % alle Kopf- und Fusszeilenfelder bereinigen
+    \fancyhead[L]{}                             % Kopfzeile links
+    \fancyhead[C]{}                             % zentrierte Kopfzeile
+    \fancyhead[R]{}                             % Kopfzeile rechts
+    %
+    \fancyfoot[L]{}                             % Fusszeile links
+    \fancyfoot[C]{}                             % Fusszeile zentriert
+    \fancyfoot[R]{\thepage}                     % Fusszeile rechts
+    %
+    \renewcommand{\headrulewidth}{0.4pt}        % obere Trennlinie
+    \renewcommand{\footrulewidth}{0.4pt}        % untere Trennlinie
+
