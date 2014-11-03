@@ -2,3 +2,11 @@ Open Points
 -----------
 - USB CDC drivers for Linux (from KDS Linux) -> No additional driver needed
 - USB CDC drivers for Mac?
+
+- Documentation:
+  - operations (arithmetic, logic)
+  - functions
+  - data types
+  - printf() and its prarameters
+  - arrays
+  - ...
