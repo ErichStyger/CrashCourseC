@@ -1,0 +1,8 @@
+/Generated_Code
+/Documentation
+/Debug
+/.settings
+.cwGeneratedFileSetLog
+*.g_c
+*.g_x
+ProjectInfo.xml
