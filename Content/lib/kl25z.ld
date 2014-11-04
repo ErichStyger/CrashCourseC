@@ -4,13 +4,13 @@
 /*##                                   */
 /*##     Filename  : ProcessorExpert.ld */
 /*##                                   */
-/*##     Project   : FRDM-KL25Z_printf */
+/*##     Project   : FRDM-KL25Z_CrashCourseC */
 /*##                                   */
 /*##     Processor : MKL25Z128VLK4     */
 /*##                                   */
 /*##     Compiler  : GNU C Compiler    */
 /*##                                   */
-/*##     Date/Time : 2014-09-28, 11:59, # CodeGen: 15 */
+/*##     Date/Time : 2014-11-04, 08:40, # CodeGen: 0 */
 /*##                                   */
 /*##     Abstract  :                   */
 /*##                                   */
@@ -57,8 +57,8 @@ SECTIONS
   .cfmprotect :
   {
     . = ALIGN(4);
-	KEEP(*(.cfmconfig))	/* Flash Configuration Field (FCF) */
-	. = ALIGN(4);
+  KEEP(*(.cfmconfig)) /* Flash Configuration Field (FCF) */
+  . = ALIGN(4);
   } > m_cfmprotrom
   
   /* The program code and other data goes into INTERNAL_FLASH */
@@ -141,7 +141,7 @@ SECTIONS
     KEEP (*(.fini_array*))
     PROVIDE_HIDDEN (__fini_array_end = .);
 
-	___ROM_AT = .;
+  ___ROM_AT = .;
   } > m_text
   /* reserve MTB memory at the beginning of m_data */
   .mtb : /* MTB buffer address as defined by the hardware */
@@ -174,7 +174,7 @@ SECTIONS
   {
     /* This is used by the startup in order to initialize the .bss section */
     __START_BSS = .;
-	  PROVIDE ( __bss_start__ = __START_BSS );
+    PROVIDE ( __bss_start__ = __START_BSS );
 
     *(.bss)
     *(.bss*)
@@ -182,7 +182,7 @@ SECTIONS
 
     . = ALIGN(4);
     __END_BSS = .;
- 	  PROVIDE ( __bss_end__ = __END_BSS );
+    PROVIDE ( __bss_end__ = __END_BSS );
   } > m_data
 
   _romp_at = ___ROM_AT + SIZEOF(.data);
