@@ -1,1 +1,1 @@
-This folder is used to build the library.
+This folder is used to build the library. It is used to keep the temporary object files and to store the library file.

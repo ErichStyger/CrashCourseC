@@ -29,10 +29,10 @@ del /Q %OBJ_PATH%\*.a
 %CC% %CC_OPTIONS% -c -o %OBJ_PATH%/LEDR.o %LIB_PATH%/LEDR.c
 %CC% %CC_OPTIONS% -c -o %OBJ_PATH%/LEDG.o %LIB_PATH%/LEDG.c
 %CC% %CC_OPTIONS% -c -o %OBJ_PATH%/LEDB.o %LIB_PATH%/LEDB.c
+%CC% %CC_OPTIONS% -c -o %OBJ_PATH%/UTIL1.o %LIB_PATH%/UTIL1.c
 %CC% %CC_OPTIONS% -c -o %OBJ_PATH%/PE_LDD.o %LIB_PATH%/PE_LDD.c
 
 REM Build library
-%AR% %AR_OPTIONS% %OBJ_PATH%/libkl25z.a %OBJ_PATH%/startup.o %OBJ_PATH%/Vectors.o %OBJ_PATH%/IO1.o %OBJ_PATH%/CsIO1.o %OBJ_PATH%/Cpu.o %OBJ_PATH%/Events.o %OBJ_PATH%/WAIT1.o %OBJ_PATH%/LEDR.o %OBJ_PATH%/LEDG.o %OBJ_PATH%/LEDB.o %OBJ_PATH%/BitIoLdd1.o %OBJ_PATH%/BitIoLdd2.o %OBJ_PATH%/BitIoLdd3.o %OBJ_PATH%/LEDpin1.o %OBJ_PATH%/LEDpin2.o %OBJ_PATH%/LEDpin3.o %OBJ_PATH%/PE_LDD.o
-del /Q %OBJ_PATH%\*.o
-
+%AR% %AR_OPTIONS% %OBJ_PATH%/libkl25z.a %OBJ_PATH%/startup.o %OBJ_PATH%/Vectors.o %OBJ_PATH%/IO1.o %OBJ_PATH%/CsIO1.o %OBJ_PATH%/Cpu.o %OBJ_PATH%/Events.o %OBJ_PATH%/WAIT1.o %OBJ_PATH%/LEDR.o %OBJ_PATH%/LEDG.o %OBJ_PATH%/LEDB.o %OBJ_PATH%/BitIoLdd1.o %OBJ_PATH%/BitIoLdd2.o %OBJ_PATH%/BitIoLdd3.o %OBJ_PATH%/LEDpin1.o %OBJ_PATH%/LEDpin2.o %OBJ_PATH%/LEDpin3.o %OBJ_PATH%/UTIL1.o %OBJ_PATH%/PE_LDD.o
 pause
+rem del /Q %OBJ_PATH%\*.o
