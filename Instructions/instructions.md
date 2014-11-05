@@ -1,5 +1,8 @@
 # Instructions for CrashCourseC
 
+## Labs
+* [Blinky](labs/blinky.md)
+
 ## Control structures
 
 * [```if```](controls/if.md)
