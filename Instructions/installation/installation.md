@@ -30,11 +30,6 @@ You need the following:
 
 ## Building the library
 Follow the steps in [Building the Library](buildingLibrary.md).
-*Congratulations, now you have a library you can use!*
 
 ## Building the first program
 Follow the steps in [My First Program](myFirstProgram.md).
-*Congratulations, you have compiled, linked and downloaded your first program!*
-
-
-
