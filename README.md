@@ -14,5 +14,6 @@ The course philosophy is:
 * Motivating: labs are short, and there shall be a feeling of success after 10 to 15 minutes.
 
 The following links guide to the course content:
+
 1. [Installation](Instructions/installation/installation.md)
-1. [Instructions](Instructions/instructions.md)
+2. [Instructions](Instructions/instructions.md)
