@@ -1,4 +1,6 @@
 # Installation
+The goal is that you have all the necessary tools and drivers installed.
+
 You need the following:
 
 * [FRDM-KL25Z](http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=FRDM-KL25Z) board.
@@ -21,12 +23,18 @@ You need the following:
 > Close the port, then unplug the board, plug it in again and then open the COM port again.
 
 ## Test the board
-* Copy the file Labs/BlinkBlueLED/BlinkRedLED.s19 to your board: it shall blink the red LED
-* Copy the file Labs/Printf/PrintF.s19 to your board: it shall blink the blue LED and write text to your terminal
-* 
-Congratulations, you board is working!
+* Copy the file **Labs/BlinkBlueLED/BlinkRedLED.s19** to your board: it shall blink the red LED
+* Copy the file **Labs/Printf/PrintF.s19** to your board: it shall blink the blue LED and write text to your terminal
 
-## Build the library
-Follow the steps in [Building the Library](buildingLibrary.md)
+*Congratulations, you board is working!*
+
+## Building the library
+Follow the steps in [Building the Library](buildingLibrary.md).
+*Congratulations, now you have a library you can use!*
+
+## Building the first program
+Follow the steps in [My First Program](myFirstProgram.md).
+*Congratulations, you have compiled, linked and downloaded your first program!*
+
 
 

@@ -11,7 +11,7 @@ To build the library:
 * CD (change directory) into Content/lib
 * Execute the buildlib.bat batch file (Note: there might be a bug that you need to run the batch file twice)
 * Press a key at the end to continue
-* Your obj folder shall now contain several object (*.o) files, and one library file (**libkl25z.a**)
+* Your obj folder shall now contain several object (.o) files, and one library file (**libkl25z.a**)
 
 Congratulations, you have built the library!
 
