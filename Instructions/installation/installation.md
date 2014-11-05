@@ -23,7 +23,7 @@ You need the following:
 > Close the port, then unplug the board, plug it in again and then open the COM port again.
 
 ## Test the board
-* Copy the file **Labs/BlinkBlueLED/BlinkRedLED.s19** to your board: it shall blink the red LED
+* Copy the file **Labs/BlinkRedLED/BlinkRedLED.s19** to your board: it shall blink the red LED
 * Copy the file **Labs/Printf/PrintF.s19** to your board: it shall blink the blue LED and write text to your terminal
 
 *Congratulations, you board is working!*
