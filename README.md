@@ -16,8 +16,8 @@ The course philosophy is:
 # Course Content
 The following links guide to the course content:
 
-1. [Installation](Instructions/installation/installation.md)
-2. [Instructions](Instructions/instructions.md)
+1. [Installation](Instructions/installation/installation.md): installation of board and drivers, building the library and runing the first (empty) program.
+2. [Instructions](Instructions/instructions.md) (Lab instructions)
 
 
 # Credits

@@ -32,9 +32,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>lib</name>
+			<name>Instructions</name>
 			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Content/lib</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Instructions</locationURI>
 		</link>
 		<link>
 			<name>Static_Code/IO_Map/MKL25Z4.h</name>

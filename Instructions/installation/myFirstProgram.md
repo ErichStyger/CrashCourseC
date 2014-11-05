@@ -6,7 +6,7 @@ The library includes drivers for the hardware (LED, etc) but includes as well th
 To build your first application:
 * Open **Content/main.c** with a text editor (e.g. Notepad)
 * Your an 'empty' program looks like this
-```cpp
+```c
 #include "Cpu.h"  /* interface to CPU, do not remove */
 
 int main(void) {
