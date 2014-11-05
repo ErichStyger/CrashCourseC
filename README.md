@@ -13,7 +13,15 @@ The course philosophy is:
 * Short: Sessions are interactive, and half an hour to one hour max.
 * Motivating: labs are short, and there shall be a feeling of success after 10 to 15 minutes.
 
+# Course Content
 The following links guide to the course content:
 
 1. [Installation](Instructions/installation/installation.md)
 2. [Instructions](Instructions/instructions.md)
+
+
+# Credits
+This course is proudly prepared for you by:
+* Daniel Winz
+* Ervin Mazlagic
+* Erich Styger
