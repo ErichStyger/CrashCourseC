@@ -12,9 +12,7 @@ OCP_OPTIONS=-O srec
 
 main:
 	$(CC) $(CC_OPTIONS) -c -o $(OBJ_PATH)/main.o main.c
-
-rem:
-	$(LL) $(LL_OPTIONS) -o $(OBJ_PATH)/application.elf $(OBJ_PATH)/main.o -lkl25z
+	$(LL) $(LL_OPTIONS) -o $(OBJ_PATH)/application.elf $(OBJ_PATH)/main.o -lkl25z $(LIB_PATH)/obj/CsIO1.o
 	$(OCP) $(OCP_OPTIONS) $(OBJ_PATH)/application.elf $(OBJ_PATH)/application.s19
 
 .PHONY: clean
