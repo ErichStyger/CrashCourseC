@@ -1,5 +1,9 @@
 # If statement
 
+---
+
+[Zurück](../instructions.md)
+
 ```c
 if(condition) {
     doTrue();

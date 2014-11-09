@@ -1,5 +1,9 @@
 # Switch case selection
 
+---
+
+[Zurück](../instructions.md)
+
 ```c
 switch(variable) {
     case(CASE_A): 
