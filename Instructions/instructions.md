@@ -7,6 +7,9 @@
 ## Labs
 * [Blinky](labs/blinky.md)
 
+## Input / output
+* [```printf()```](io/printf.md)
+
 ## Control structures
 
 * [```if```](controls/if.md)
