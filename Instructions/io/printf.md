@@ -7,12 +7,14 @@
 Printing of some text:
 ```c
 printf("Hello World\n");
+> Hello World
 ```
 
 Printing of variables:
 ```c
 int a = 1000;
-printf("a is %d", a);
+printf("a is %d\n", a);
+> a is 1000
 ```
 
 ## special characters
