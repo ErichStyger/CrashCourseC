@@ -7,6 +7,9 @@
 ## Labs
 * [Blinky](labs/blinky.md)
 
+## Functions
+* [functions](functions/functions.md)
+
 ## Input / output
 * [```printf()```](io/printf.md)
 
