@@ -8,7 +8,8 @@
 * [Blinky](labs/blinky.md)
 
 ## Operators
-* [arithmetic](op/arithmetic.md)
+* [arithmetic operators](op/arithmetic.md)
+* [compare operators](op/compare.md)
 
 ## Functions
 * [functions](functions/functions.md)
