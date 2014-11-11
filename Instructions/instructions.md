@@ -7,6 +7,9 @@
 ## Labs
 * [Blinky](labs/blinky.md)
 
+## Operators
+* [arithmetic](op/arithmetic.md)
+
 ## Functions
 * [functions](functions/functions.md)
 
