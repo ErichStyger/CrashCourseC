@@ -11,6 +11,7 @@
 * [arithmetic operators](op/arithmetic.md)
 * [compare operators](op/compare.md)
 * [logic operators](op/logic.md)
+* [bitwise operators](op/bit.md)
 
 ## Functions
 * [functions](functions/functions.md)
