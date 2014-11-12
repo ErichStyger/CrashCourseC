@@ -1,8 +1,8 @@
-# bitwise operators
+﻿# bitwise operators
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 Bitwise operators handle every bit inside a variable individually. 
 ```c

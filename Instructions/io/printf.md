@@ -1,8 +1,8 @@
-# printf()
+﻿# printf()
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 Printing of some text:
 ```c

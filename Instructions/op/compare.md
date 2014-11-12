@@ -1,8 +1,8 @@
-# compare operators
+﻿# compare operators
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 ```c
 == /* (a == b) a equal to b */

@@ -1,8 +1,8 @@
-# If statement
+﻿# If statement
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 ```c
 if(condition) {

@@ -1,8 +1,8 @@
-# Installation
+﻿# Installation
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 The goal is that you have all the necessary tools and drivers installed.
 

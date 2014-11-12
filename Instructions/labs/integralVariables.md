@@ -2,7 +2,7 @@
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 The goal is to learn about integral variables.
 

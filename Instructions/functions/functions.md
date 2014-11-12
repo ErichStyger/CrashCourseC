@@ -1,8 +1,8 @@
-# functions
+﻿# functions
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 ## simple function with return value and two parameters
 ```c

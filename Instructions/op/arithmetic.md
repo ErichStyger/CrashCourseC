@@ -1,8 +1,8 @@
-# arithmetic operators
+﻿# arithmetic operators
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 ```c
 + /* (a + b) plus*/

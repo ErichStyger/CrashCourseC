@@ -1,8 +1,8 @@
-# For Loop
+﻿# For Loop
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 ```c
 for(init; condition, count) {

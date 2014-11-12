@@ -1,8 +1,8 @@
-# logic operators
+﻿# logic operators
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 ```c
 && /* (a && b) logical and */

@@ -1,8 +1,8 @@
-# While loop
+﻿# While loop
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 ```c
 while(condition) {

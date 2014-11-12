@@ -2,7 +2,7 @@
 
 ---
 
-[Zurück](../README.md)
+[Back](../README.md)
 
 ## Labs
 * [Blinky](labs/blinky.md)

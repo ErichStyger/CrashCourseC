@@ -1,8 +1,8 @@
-# Do while loop
+﻿# Do while loop
 
 ---
 
-[Zurück](../instructions.md)
+[Back](../instructions.md)
 
 ```c
 do {
