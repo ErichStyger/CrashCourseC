@@ -6,7 +6,7 @@
 
 ## Labs
 * [Blinky](labs/blinky.md)
-* [Variables](labs/variables.md)
+* [Integral Variables](labs/integralVariables.md)
 
 ## Operators
 * [arithmetic operators](op/arithmetic.md)

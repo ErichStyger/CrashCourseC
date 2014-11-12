@@ -28,6 +28,7 @@ A variable is *defined* with the following (simplified) syntax:
 |
 * variable type
 
+## Signed and Unsigned
 ```
 In C there are several predefined unsigend integral types:
 * ```unsigned char```:  unsigned char
@@ -51,4 +52,24 @@ You can omit the ```signed```:
 * ```int```: signed integer
 * ```long```: signed long integer
 
+## Size of Types
+How many bytes each standard integral type has, depends on the compiler. For a 32bit microprocessor it is typically (both signed and unsigned types):
+* ```char```: 8bit, -127 to 128, 0 to 255, 0x00 to 0xFF
+* ```short```: 16bit, −32768 to 32767, 0 to 65535, 0x0000 to 0xFFFF
+* ```int```: 32bit, −2147483648 to 2147483647, 0 to 4294967295, 0x00000000 to 0xFFFFFFFF
+* ```long```: 32bit, dito
 
+## Global or Local
+Depending on where the variable is written in the source, this defines which memory it is using. 
+For the program there are two basic types of memory:
+* Global Memory: a variable in global memory is 'alive' or active during the whole program
+* Local Memory: the variable is only alive and accessible while it is 'in scope', e.g. only while that function is running.
+
+## Lab
+In the following lab, we are using a *global* variable, named ```useRed```.
+It gets initialized with a value. In the ```main()``` function then we test if it has the value 1, then we blink the red LED.
+Otherwise we blink the blue led:
+
+```c
+
+``` 
