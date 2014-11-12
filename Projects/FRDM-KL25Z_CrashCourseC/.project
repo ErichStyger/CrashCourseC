@@ -37,6 +37,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Instructions</locationURI>
 		</link>
 		<link>
+			<name>Labs</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Labs</locationURI>
+		</link>
+		<link>
 			<name>Static_Code/IO_Map/MKL25Z4.h</name>
 			<type>1</type>
 			<location>C:/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/iofiles/MKL25Z4.h</location>

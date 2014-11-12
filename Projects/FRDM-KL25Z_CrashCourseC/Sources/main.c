@@ -51,6 +51,8 @@
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include <stdio.h>
 
+int useRed = 1;
+
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
@@ -62,6 +64,17 @@ int main(void)
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
+#if 1
+  for(;;) {
+    if (useRed==1) {
+      LEDR_Neg();
+    } else {
+      LEDB_Neg();
+    }
+    WAIT1_Waitms(500);
+  }
+#endif
+#if 0
   for (;;) {
     LEDR_On();
     WAIT1_Waitms(50);
@@ -78,7 +91,7 @@ int main(void)
     printf("hello world!\r\n");
     printf("number %d\r\n", 5);
   }
-
+#endif
   /* For example: for(;;) { } */
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
