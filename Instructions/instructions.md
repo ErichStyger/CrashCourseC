@@ -1,4 +1,4 @@
-# Instructions for CrashCourseC
+﻿# Instructions for CrashCourseC
 
 ---
 
@@ -6,6 +6,7 @@
 
 ## Labs
 * [Blinky](labs/blinky.md)
+* [Variables](labs/variables.md)
 
 ## Operators
 * [arithmetic operators](op/arithmetic.md)
