@@ -54,7 +54,7 @@ You can omit the ```signed```:
 
 ## Size of Types
 How many bytes each standard integral type has, depends on the compiler. For a 32bit microprocessor it is typically (both signed and unsigned types):
-* ```char```: 8bit, -127 to 128, 0 to 255, 0x00 to 0xFF
+* ```char```: 8bit, -128 to 127, 0 to 255, 0x00 to 0xFF
 * ```short```: 16bit, −32768 to 32767, 0 to 65535, 0x0000 to 0xFFFF
 * ```int```: 32bit, −2147483648 to 2147483647, 0 to 4294967295, 0x00000000 to 0xFFFFFFFF
 * ```long```: 32bit, dito
