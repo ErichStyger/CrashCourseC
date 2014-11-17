@@ -1,7 +1,7 @@
 #include "Cpu.h"  /* interface to CPU, do not remove */
 #include "WAIT1.h"  /* waiting routines  */
 #include "LEDR.h"   /* red LED */
-#include "LEDB.h"   /* red LED */
+#include "LEDB.h"   /* blue LED */
 
 int useRed = 1;
 
