@@ -5,6 +5,7 @@
 [Back](../README.md)
 
 ## Labs
+* [First steps](labs/first.md)
 * [Blinky](labs/blinky.md)
 * [Integral Variables](labs/integralVariables.md)
 
