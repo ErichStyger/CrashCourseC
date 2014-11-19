@@ -4,14 +4,15 @@
 
 [Back](../instructions.md)
 
-The goal write text to the console/terminal. For this we are using printf().
+The goal write text to the console/terminal. For this we are using ```printf()```.
 
 ## printf Introduction
 [```printf()```](../io/printf.md) is a function of the standard library (```stdio.h```) which can be used to output text to a terminal or console.
-See (../io/printf.md) how ```printf``` is used.
+See [```printf()```](../io/printf.md) how it is used.
 
 
-Before using ```printf()```, you need to include the interface first which is in ```stdio.h```:
+## Hello World
+Before using ```printf()```, you need to include the interface first, which is in ```stdio.h```:
 ```c
 #include <stdio.h>
 ```
@@ -20,8 +21,9 @@ Notice that so far we used something like
 ```c
 #include "LEDR.h"
 ```
-with the file name in double quotes. The difference between using ```"..."``` and ```<...>``` is that with the double quotes the compiler searches in the 'user' include folders, while with ```<...>``` it searches in the 'library' include folders.
-
+with the file name in double quotes. The difference between using ```"..."``` and ```<...>``` is:
+* with ```"..."``` the compiler searches in the 'user' include folders.
+* with ```<...>``` the compiler searches in the 'library' include folders.
 
 Example to print a hello world message:
 
@@ -45,12 +47,14 @@ int main(void) {
 }
 
 ```
+Build that program and check what it writes to your terminal program.
 
+## Printing counting numbers
 Now lets write the numbers from 0 to 10. For this we are going to use a local variable:
 ```c
 int i;
 ```
-We create a ```for``` loop. See (../io/for.md) how this loop control is used.
+We create a ```for``` loop. See [```for```](../io/for.md) how this loop control is used.
 
 In the ```for``` loop, the variable ```i``` gets initialized with zero (```i=0```).
 The loop continues as long as i is smaller than 10 (```i<10```).
