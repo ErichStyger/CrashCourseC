@@ -8,6 +8,7 @@
 * [First steps](labs/first.md)
 * [Blinky](labs/blinky.md)
 * [Integral Variables](labs/integralVariables.md)
+* [printf](labs/printf.md)
 
 ## Operators
 * [arithmetic operators](op/arithmetic.md)
