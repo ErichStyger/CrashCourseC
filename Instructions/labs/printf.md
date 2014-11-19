@@ -54,7 +54,7 @@ Now lets write the numbers from 0 to 10. For this we are going to use a local va
 ```c
 int i;
 ```
-We create a ```for``` loop. See [```for```](../io/for.md) how this loop control is used.
+We create a ```for``` loop. See [```for```](../controls/for.md) how this loop control is used.
 
 In the ```for``` loop, the variable ```i``` gets initialized with zero (```i=0```).
 The loop continues as long as i is smaller than 10 (```i<10```).
