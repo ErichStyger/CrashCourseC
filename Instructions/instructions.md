@@ -21,6 +21,7 @@
 
 ## Input / output
 * [```printf()```](io/printf.md)
+* [```scanf()```](io/scanf.md)
 
 ## Control structures
 
