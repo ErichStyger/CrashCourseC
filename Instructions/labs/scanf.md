@@ -4,15 +4,15 @@
 
 [Back](../instructions.md)
 
-The goal read and write text. For this we are using [```printf()```](../io/printf.md) and [```scanf()```](../io/scanf.md).
+The goal read text. For this we are using [```scanf()```](../io/scanf.md) which works similar as the [```printf()```](../io/printf.md) from the previous lab.
 
 ## scanf Introduction
 [```scanf()```](../io/scanf.md) is a function of the standard library (```stdio.h```) which can be used to read text from a terminal or console.
-See [```scanf()```](../io/scanff.md) how it is used.
+See how it is used: [```scanf()```](../io/scanff.md).
 
 
 ## Hello World
-Before using ```scanff()```, you need to include the interface first, which is in ```stdio.h```:
+Before using ```scanf()```, you need to include the interface first, which is in ```stdio.h```:
 ```c
 #include <stdio.h>
 ```
@@ -47,13 +47,11 @@ Build that program and check what it writes to your terminal program.
 
 The above program uses in addition the function ```getchar()```: this is necessary to skip remaining input characters until a new line. Otherwise if wrong or too many values are entered, ```scanf()``` will loop forever!
 
-## Printing counting numbers
-
 Congratulations, you have used ```scanf()```!
 
 ## Ideas
-* Extend the above program so it blinks a LED. E.g. blink the red LED if you have entered the number 1, and the blue if you have entered the number 2.
-* Scan for two numbers in a row with "%d %d". Don't forget to pass two pointers to variables after the formatting string.
+* Extend the above program so it blinks a LED. E.g. blink the red LED if you have entered the number ```1```, and the blue if you have read the number ```2```.
+* Scan for two numbers in a row with ```"%d %d"```. Don't forget to pass two pointers to variables after the formatting string.
 
 
 
