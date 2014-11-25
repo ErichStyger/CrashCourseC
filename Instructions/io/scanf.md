@@ -30,6 +30,8 @@ printf("You entered: '%d'", a);
 > You entered: '35'
 ```
 
+Note that for ```scanf()``` the argument list after the formatting string are always pointer to variables. This because ```scanf()``` need to write into that variable, and therefore needs to know the address of it.
+
 ## placeholders
 Some often used placeholders:
 ```c
@@ -40,7 +42,7 @@ Some often used placeholders:
 %x, %X  unsigned integer (hexadecimal representation)
 %f      float
 %c      character
-%s      string
+%s      string (character sequence until the first tab/newline/space)
 ```
 
 ## return value

@@ -66,6 +66,35 @@ int main(void)
   /* Write your code here */
 #if 1
   for(;;) {
+    int result, value;
+
+    printf("Please enter a number:\r\n");
+    result = scanf("%d", &value);
+    while('\n' != getchar()); /* skip rest of input until '\n' */
+    if (result==1) { /* one value read */
+      printf("You entered: '%d'\r\n", value);
+    } else {
+      printf("Wrong number of input: is '%d' but should be '1'!\r\n", result);
+    }
+  }
+#endif
+
+#if 0
+  for(;;) {
+    char buffer[32];
+    int result;
+
+    printf("Please enter a word:\r\n");
+    result = scanf("%s", &buffer[0]);
+    if (result==1) {
+      printf("You entered: '%s'\r\n", &buffer[0]);
+    } else {
+      printf("Wrong number of input: is '%d' but should be '1'!\r\n", &buffer[0]);
+    }
+  }
+#endif
+#if 0
+  for(;;) {
     if (useRed==1) {
       LEDR_Neg();
     } else {
