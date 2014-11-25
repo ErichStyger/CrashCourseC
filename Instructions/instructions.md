@@ -9,6 +9,7 @@
 * [Blinky](labs/blinky.md)
 * [Integral Variables](labs/integralVariables.md)
 * [printf](labs/printf.md)
+* [scanf](labs/scanf.md)
 
 ## Operators
 * [arithmetic operators](op/arithmetic.md)
