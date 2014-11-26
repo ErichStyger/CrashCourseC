@@ -15,3 +15,5 @@
 |  X  |  X  | data types for integers |
 |     |  X  | short introduction in printf() and scanf() - no details |
 |  X  |     | printf(), for() loop    |
+|  X  |     | scanf()    |
+|     |     | functions   |
