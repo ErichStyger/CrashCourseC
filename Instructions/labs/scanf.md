@@ -8,7 +8,7 @@ The goal read text. For this we are using [```scanf()```](../io/scanf.md) which 
 
 ## scanf Introduction
 [```scanf()```](../io/scanf.md) is a function of the standard library (```stdio.h```) which can be used to read text from a terminal or console.
-See how it is used: [```scanf()```](../io/scanff.md).
+See how it is used: [```scanf()```](../io/scanf.md).
 
 
 ## Hello World
