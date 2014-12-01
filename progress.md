@@ -13,7 +13,6 @@
 |  X  |  X  | Variables |
 |  X  |  X  | local, global variables |
 |  X  |  X  | data types for integers |
-|     |  X  | short introduction in printf() and scanf() - no details |
-|  X  |     | printf(), for() loop    |
-|  X  |     | scanf()    |
+|  X  |  X  | printf(), for() loop    |
+|  X  |  X  | scanf()    |
 |     |     | functions   |
