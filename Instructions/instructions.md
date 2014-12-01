@@ -5,12 +5,12 @@
 [Back](../README.md)
 
 ## Labs
-* [First steps](labs/first.md)
-* [Blinky](labs/blinky.md)
-* [Integral Variables](labs/integralVariables.md)
-* [printf](labs/printf.md)
-* [scanf](labs/scanf.md)
-* [functions](labs/functions.md)
+* [First steps](labs/first.md): installation and first application on the board.
+* [Blinky](labs/blinky.md): blinking the red, green and blue LED.
+* [Integral Variables](labs/integralVariables.md): using integer variables.
+* [printf](labs/printf.md): printing text to the console/terminal.
+* [scanf](labs/scanf.md): reading numbers and text from the console/terminal.
+* [Functions](labs/functions.md): writing functions and calling them.
 
 ## Operators
 * [arithmetic operators](op/arithmetic.md)
