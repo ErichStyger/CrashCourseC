@@ -53,6 +53,38 @@
 
 int useRed = 1;
 
+int multiply(int a, int b) {
+  return a*b;
+}
+
+/* Divides two numbers (dividend/divisor) and returns the result. In case of division by zero,
+ * *isDivisionByZero is set to 1, otherwise to 0.
+ */
+int divide(int dividend, int divisor, int *isDivisionByZero) {
+  if (divisor==0) {
+    *isDivisionByZero = 1; /* is division by zero */
+    return 0;
+  } else {
+    *isDivisionByZero = 0; /* is division by zero */
+    return dividend/divisor;
+  }
+}
+
+/* Read a number from the console and return it */
+int readNumber(void) {
+  int res, number;
+
+  printf("Enter number:\r\n");
+  res = scanf("%d", &number);
+  while('\n' != getchar()); /* skip rest of input until '\n' */
+  if (res==1) { /* one value read */
+    return number;
+  } else {
+    printf("ERROR: Wrong number input!\r\n");
+    return 0;
+  }
+}
+
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
@@ -65,6 +97,20 @@ int main(void)
 
   /* Write your code here */
 #if 1
+  for(;;) {
+    int dividend, divisor, result, isDivisionByZero;
+
+    dividend = readNumber();
+    divisor = readNumber();
+    result = divide(dividend, divisor, &isDivisionByZero);
+    if (isDivisionByZero) {
+      printf("ERROR: Division by zero!\r\n");
+    } else {
+      printf("Result: '%d'\r\n", result);
+    }
+  } /* for */
+#endif
+#if 0
   for(;;) {
     int result, value;
 

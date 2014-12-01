@@ -10,6 +10,7 @@
 * [Integral Variables](labs/integralVariables.md)
 * [printf](labs/printf.md)
 * [scanf](labs/scanf.md)
+* [functions](labs/functions.md)
 
 ## Operators
 * [arithmetic operators](op/arithmetic.md)
