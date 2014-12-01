@@ -4,7 +4,7 @@
 
 [Back](../instructions.md)
 
-The goal read text. For this we are using [```scanf()```](../io/scanf.md) which works similar as the [```printf()```](../io/printf.md) from the previous lab.
+The goal is to read text from the console/terminal. For this we are using [```scanf()```](../io/scanf.md) which works similar as the [```printf()```](../io/printf.md) from the previous lab.
 
 ## scanf Introduction
 [```scanf()```](../io/scanf.md) is a function of the standard library (```stdio.h```) which can be used to read text from a terminal or console.
