@@ -28,10 +28,24 @@ In general, functions are defined like this:
 The following function increments a global variable everytime ```foo()``` gets called:
 ```c
 int var;
+
 void foo(void) {
   var++;
 }
 ```
+The function executes the code between ```{``` and ```}``` and automatically ends or returns from the function at the end.
+But it is possible to return earlier with a ```return``` statement:
+```c
+int var;
+
+void foo(void) {
+  if (var>10) { /* only increment values if variable is less than 10 */
+    return; /* leave function here */
+  }
+  var++; /* increment variable */
+}
+```
+    
 
 The following function returns the sum of two parameters:
 ```c
