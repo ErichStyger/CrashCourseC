@@ -9,27 +9,28 @@ An essential thing of programs is that they can loop around the code. In this la
 * [```while```](../controls/while.md)
 * [```do-while```](../controls/do-while.md)
 * [```for```](../controls/for.md)
+
 For a brief overwiew, check the above links.
 
 # ```while``` Loops
-There are two variants of the while loop
+There are two variants of the ```while``` loop: ```while```:
 ```c
 while(condition) {
   /* some code here */
 }
 ```
-and
+and ```do-while```.
 ```c
 do {
   /* some code here */
 } while(condition);
 ```
-The difference is only in which place the ```condition``` is checked: either at the the beginning of the loop or at the end.
-As long as the condition is ```TRUE``` (```!=0```), the program will loop inside the loop construct.
+The difference is in which place the ```condition``` is checked: either at the the beginning of the loop or at the end.
+As long as the condition is ```TRUE``` (or ```!=0```), the program will stay inside the loop.
 
 ## ```while``` Examples
 
-The following ```do-while``` loop increments a variable ```i``` as long it is smaller than 3:
+The following ```do-while``` loop increments the variable ```i``` as long it is smaller than 3:
 ```c
 int i;
 
@@ -50,7 +51,7 @@ The same thing can be implemented with a ```while``` loop:
 int i;
 
 i = 0;
-while (i<=4) {
+while (i<3) {
   printf("i: %d\r\n", i);
   i++;
 }
@@ -60,12 +61,11 @@ which prints
 i: 0
 i: 1
 i: 2
-i: 3
-i: 4
 ```
 So the difference is:
-* The ```while``` loop will iterate either zero or N time.
+* The ```while``` loop will iterate either zero or N times.
 * The ```do-while``` loop will iterate at least one time.
+
 An endless loop can be written as:
 ```c
 while (1) {
@@ -82,7 +82,7 @@ do {
 
 
 # ```for``` Loop
-In the previous example, we have intialized a variable outside the loop, then checked the condition and changed the variable inside the loop:
+In the previous ```while``` examples we have intialized a variable outside the loop, then checked the condition and changed the variable inside the loop:
 ```c
 <initialization>
 while (<condition>) {
@@ -90,7 +90,7 @@ while (<condition>) {
   <change>
 }
 ```
-Because such a ```while``` loop is so common in programs, there is another form which combines the ```<initialization>```, ```<change>``` and ```<condition>```: the for loop.
+Because such a ```while``` loop is so common in programs, there is another form which combines the ```<initialization>```, ```<change>``` and ```<condition>```: the ```for``` loop.
 ```c
 for(<initialization>;<condition>;<change>) {
   /* some statements here */
@@ -105,7 +105,7 @@ for(;;) {
 ```
 
 # ```break```
-Sometimes it is useful to get out of a loop. For this, the ```break``` statement can be used. ```break``` will exit the surrounding ```for```, ```while``` or ```do-while``` loop:
+Sometimes it is useful to get out of a loop earlier. For this, the ```break``` statement can be used. ```break``` will exit the surrounding ```for```, ```while``` or ```do-while``` loop:
 ```c
 int i, sum;
 
@@ -130,7 +130,7 @@ loop end!
 ```
 
 # ```continue```
-With ```continue``` the loop will execute again the <condition> part of the loop.
+With ```continue``` the loop will execute again the ```<condition>``` part of the loop.
 ```c
 int i, sum;
 
@@ -149,7 +149,7 @@ for(i=0;i<5;i++) {
 }
 printf("loop end!\r\n", i, sum);
 ```
-Will print
+It will print
 ```
 i: 0, sum: 0
 i: 1, sum: 1
@@ -164,7 +164,7 @@ loop end!
 ```
 
 # Lab
-What is the value of ```i``` after completion of the following loops:
+What is the value of ```i``` after completion of the following loops?
 ```c
 int i;
 for(i=0;i<10;i++) {
@@ -191,7 +191,8 @@ while(i>5) {
 }
 ```
 
-Try the loops with your board and print the number. Does it match what your own result?
+Try the loops with your board and print the number. Does it match what you thought?
+    
 Congratulations, you are using different forms of loops!
 
 # Summary
