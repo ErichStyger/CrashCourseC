@@ -14,5 +14,6 @@
 |  X  |  X  | local, global variables |
 |  X  |  X  | data types for integers |
 |  X  |  X  | printf(), for() loop    |
-|  X  |  X  | scanf()    |
-|     |     | functions   |
+|  X  |  X  | scanf()     |
+|  X  |     | functions   |
+|     |     | while loops |
