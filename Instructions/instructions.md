@@ -11,6 +11,7 @@
 * [printf](labs/printf.md): printing text to the console/terminal.
 * [scanf](labs/scanf.md): reading numbers and text from the console/terminal.
 * [Functions](labs/functions.md): writing functions and calling them.
+* [Loops](labs/whileLoops.md): three different forms of loops: ```while```, ```do-while``` and ```for```.
 
 ## Operators
 * [arithmetic operators](op/arithmetic.md)
@@ -26,7 +27,6 @@
 * [```scanf()```](io/scanf.md)
 
 ## Control structures
-
 * [```if```](controls/if.md)
 * [```switch```](controls/switch.md)
 * [```while```](controls/while.md)
