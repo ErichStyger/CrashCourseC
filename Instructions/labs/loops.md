@@ -114,7 +114,7 @@ for(i=0;i<5;i++) {
   sum += i;
   printf("i: %d, sum: %d\r\n", i, sum);
   if (sum==3) {
-    printf("break!\r\n", i, sum);
+    printf("break!\r\n");
     break;
   }
 }
@@ -139,15 +139,15 @@ for(i=0;i<10;i++) {
   sum += i;
   printf("i: %d, sum: %d\r\n", i, sum);
   if (sum>10) {
-    printf("break!\r\n", i, sum);
+    printf("break!\r\n");
     break;
   }
   if (i==3) {
-    printf("continue!\r\n", i, sum);
+    printf("continue!\r\n");
     continue;
   }
 }
-printf("loop end!\r\n", i, sum);
+printf("loop end!\r\n");
 ```
 It will print
 ```
