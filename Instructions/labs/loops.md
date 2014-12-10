@@ -135,7 +135,7 @@ With ```continue``` the loop will execute again the ```<condition>``` part of th
 int i, sum;
 
 sum = 0;
-for(i=0;i<5;i++) {
+for(i=0;i<10;i++) {
   sum += i;
   printf("i: %d, sum: %d\r\n", i, sum);
   if (sum>10) {
@@ -157,6 +157,8 @@ i: 2, sum: 3
 i: 3: sum: 6
 continue!
 i: 4: sum: 10
+i: 5: sum: 15
+break!
 loop end!
 ```
 
