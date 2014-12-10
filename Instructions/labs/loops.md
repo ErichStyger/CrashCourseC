@@ -130,7 +130,8 @@ loop end!
 ```
 
 # ```continue```
-With ```continue``` the loop will execute again the ```<condition>``` part of the loop.
+With ```continue``` the loop will execute again the ```<change``` of the for loop and then check the ```<condition>``` part of the loop.
+In a ```while``` loop it will check again the ```<condition>``` part.
 ```c
 int i, sum;
 
@@ -146,20 +147,25 @@ for(i=0;i<10;i++) {
     printf("continue!\r\n");
     continue;
   }
+  printf("jump back.);
 }
-printf("loop end!\r\n");
+printf("loop ended!\r\n");
 ```
 It will print
 ```
 i: 0, sum: 0
+jump back.
 i: 1, sum: 1
+jump back.
 i: 2, sum: 3
+jump back.
 i: 3: sum: 6
 continue!
 i: 4: sum: 10
+jump back.
 i: 5: sum: 15
 break!
-loop end!
+loop ended!
 ```
 
 # Lab

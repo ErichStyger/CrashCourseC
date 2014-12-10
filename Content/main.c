@@ -54,8 +54,9 @@ static void for1(void) {
       printf("continue!\r\n", i, sum);
       continue;
     }
+    printf("jump back.\r\n", i, sum);
   }
-  printf("loop end!\r\n", i, sum);
+  printf("loop ended!\r\n", i, sum);
 }
 
 int main(void) {
