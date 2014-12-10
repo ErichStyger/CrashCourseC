@@ -154,12 +154,9 @@ It will print
 i: 0, sum: 0
 i: 1, sum: 1
 i: 2, sum: 3
-i: 3: sum: 5
+i: 3: sum: 6
 continue!
-i: 3: sum: 8
-continue!
-i: 3: sum: 11
-break!
+i: 4: sum: 10
 loop end!
 ```
 
