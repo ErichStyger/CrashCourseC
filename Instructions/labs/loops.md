@@ -118,7 +118,7 @@ for(i=0;i<5;i++) {
     break;
   }
 }
-printf("loop end!\r\n", i, sum);
+printf("loop end!\r\n");
 ```
 Will print
 ```
