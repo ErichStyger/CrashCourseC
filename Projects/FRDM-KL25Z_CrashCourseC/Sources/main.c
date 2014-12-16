@@ -50,6 +50,7 @@
 #include "IO_Map.h"
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include <stdio.h>
+#include <stdlib.h>
 
 int useRed = 1;
 
@@ -81,7 +82,38 @@ int readNumber(void) {
     return number;
   } else {
     printf("ERROR: Wrong number input!\r\n");
-    return 0;
+    return -1;
+  }
+}
+
+void GuessTheNumber(int maxVal, int nofTries) {
+  int secretNumber, val;
+  int i;
+
+  printf("------------------------------\nGuess The Number Game\n------------------------------\n");
+  secretNumber = rand(); /* needs <stdlib.h> */
+  secretNumber %= maxVal; /* make it inside limits (0..maxVal) */
+  printf("SECRET %d!\n", secretNumber);
+  printf("Guess the secret number between 0 and %d. You can guess %d times!\n", maxVal, nofTries);
+  for(i=1;i<=nofTries;i++) {
+    printf("Trial %d of %d: ", i, nofTries);
+    val = readNumber();
+    if (val<0 || val>maxVal) {
+      printf("*** ERROR: number must be between %d and %d!\n", 0, maxVal);
+    }
+    if (val==secretNumber) {
+      printf("*** You found it!\n");
+      break;
+    } else if (secretNumber<val) {
+      printf("*** Your guess was too low!\n");
+    } else if (secretNumber>val) {
+      printf("*** Your guess was too high!\n");
+    }
+  }
+  if (i<nofTries) {
+    printf("*** You win! Congratulations!\n");
+  } else {
+    printf("*** You lost! The secret number was %d\n", secretNumber);
   }
 }
 
@@ -97,6 +129,11 @@ int main(void)
 
   /* Write your code here */
 #if 1
+  for(;;) {
+    GuessTheNumber(100, 10);
+  }
+#endif
+#if 0
   for(;;) {
     int dividend, divisor, result, isDivisionByZero;
 

@@ -12,6 +12,7 @@
 * [scanf](labs/scanf.md): reading numbers and text from the console/terminal.
 * [Functions](labs/functions.md): writing functions and calling them.
 * [Loops](labs/loops.md): three different forms of loops: ```while```, ```do-while``` and ```for```.
+* [Guess The Number](labs/GuessTheNumber.md): Applying what we have learned with a small game.
 
 ## Operators
 * [arithmetic operators](op/arithmetic.md)
