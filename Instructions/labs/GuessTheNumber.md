@@ -88,6 +88,27 @@ Trial 5 of 5: Enter number:
 *** You lost! The secret number was 33
 ```
 
+# Proposed Function Flow
+Below is a possible outline of the function ```GuessTheNumber()```
+
+```c
+void GuessTheNumber(int maxVal, int nofTries) {
+  int secretNumber, val;
+  int i;
+
+  /* use printf() to write welcome message */
+  /* get random secret number with rand() */
+  /* limit secret number with modulo % operation */
+  /* loop for nofTries times.... */
+    /* ask user for number with readNumber() */
+    /* check if number is within 0..maxVal */
+    /* check if number is too low */
+    /* check if number is too high */
+    /* else: it must be the secret number! */
+  /* end loop */
+```
+Use ```printf()``` to inform the user about the progress and result of the game!
+
 # Reading Numbers
 For this we can use what we had in the lab using ```scanf()```:
 ```c

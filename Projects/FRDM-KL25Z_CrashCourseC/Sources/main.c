@@ -91,21 +91,21 @@ void GuessTheNumber(int maxVal, int nofTries) {
   int i;
 
   printf("------------------------------\nGuess The Number Game\n------------------------------\n");
-  secretNumber = rand(); /* needs <stdlib.h> */
-  secretNumber %= maxVal; /* make it inside limits (0..maxVal) */
   printf("Guess the secret number between 0 and %d. You can guess %d times!\n", maxVal, nofTries);
+  secretNumber = rand(); /* needs #include <stdlib.h> */
+  secretNumber %= maxVal; /* make it inside limits (0..maxVal) */
   for(i=1;i<=nofTries;i++) {
     printf("Trial %d of %d: ", i, nofTries);
     val = readNumber();
     if (val<0 || val>maxVal) {
       printf("*** ERROR: number must be between %d and %d!\n", 0, maxVal);
-    } else if (val==secretNumber) {
-      printf("*** You found it!\n");
-      break;
     } else if (val<secretNumber) {
       printf("*** Your guess was too low!\n");
     } else if (val>secretNumber) {
       printf("*** Your guess was too high!\n");
+    } else {
+      printf("*** You found it!\n");
+      break;
     }
   }
   if (i<nofTries) {
