@@ -93,20 +93,18 @@ void GuessTheNumber(int maxVal, int nofTries) {
   printf("------------------------------\nGuess The Number Game\n------------------------------\n");
   secretNumber = rand(); /* needs <stdlib.h> */
   secretNumber %= maxVal; /* make it inside limits (0..maxVal) */
-  printf("SECRET %d!\n", secretNumber);
   printf("Guess the secret number between 0 and %d. You can guess %d times!\n", maxVal, nofTries);
   for(i=1;i<=nofTries;i++) {
     printf("Trial %d of %d: ", i, nofTries);
     val = readNumber();
     if (val<0 || val>maxVal) {
       printf("*** ERROR: number must be between %d and %d!\n", 0, maxVal);
-    }
-    if (val==secretNumber) {
+    } else if (val==secretNumber) {
       printf("*** You found it!\n");
       break;
-    } else if (secretNumber<val) {
+    } else if (val<secretNumber) {
       printf("*** Your guess was too low!\n");
-    } else if (secretNumber>val) {
+    } else if (val>secretNumber) {
       printf("*** Your guess was too high!\n");
     }
   }
@@ -130,7 +128,7 @@ int main(void)
   /* Write your code here */
 #if 1
   for(;;) {
-    GuessTheNumber(100, 10);
+    GuessTheNumber(100, 5);
   }
 #endif
 #if 0

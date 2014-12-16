@@ -10,6 +10,7 @@ In this lab we apply what we have learned so far
 * [```do-while```](../controls/do-while.md)
 * [```for```](../controls/for.md)
 * [```functions```](../functions/functions.md)
+
 Use above links to refresh your mind as necessary. For this we implement a small game: *Guess The Number*!
 The program will pick a random number, and the user has to guess which number it is. 
 The program will help the user telling him if his guess was too high or too low.
@@ -17,14 +18,14 @@ The user only has a limited number of trials to guess the number.
 
 # Program Flow
 The program will have the following flow:
-* the program generates a secret random number, from zero to a given maximum.
-* then it loops up to a given limit (number of trials)
-* it asks the user for his input number (guess) and reads that number
-* the program checks if the number is within the boundary
-* if the number is smaller then the secret number or higher, the user gets that information
-* if the user finds the number within the number of trials, the user wins
-* otherwise the program wins
-* then it starts over again
+* The program generates a secret random number, from zero to a given maximum.
+* Then it loops up to a given limit (number of trials)
+* It asks the user for his input number (guess) and reads that number
+* The program checks if the number is within the boundary
+* If the number is smaller then the secret number or higher, the user gets that information
+* If the user finds the number within the number of trials, the user wins
+* Otherwise the program wins
+* Then it starts the game all again
 
 # main() Loop
 As the game is repeated, we can use an endless loop in ```main()```:
@@ -34,7 +35,7 @@ int main(void) {
 
   /* Write your code here */
   for(;;) {
-    GuessTheNumber(100, 10);
+    GuessTheNumber(100, 5);
   }
   /* do not leave main()! */
   return 0;
@@ -56,7 +57,36 @@ You are going to implement that function. The general flow is:
   * Check that the number is within the limits
   * Tell the user if number found, smaller or larger than the secret number
 * If the user needs less trials than ```nofTries```, the user wins, otherwise the program wins
-* return to the caller ```main()```
+* return to the caller ```main()``` and repeat the game.
+
+# Example Game Session
+```
+------------------------------
+Guess The Number Game
+------------------------------
+Guess the secret number between 0 and 100. You can guess 5 times!
+Trial 1 of 5: Enter number:
+
+30
+*** Your guess was too low!
+Trial 2 of 5: Enter number:
+
+60
+*** Your guess was too high!
+Trial 3 of 5: Enter number:
+
+45
+*** Your guess was too high!
+Trial 4 of 5: Enter number:
+
+38
+*** Your guess was too high!
+Trial 5 of 5: Enter number:
+
+35
+*** Your guess was too high!
+*** You lost! The secret number was 33
+```
 
 # Reading Numbers
 For this we can use what we had in the lab using ```scanf()```:
@@ -101,3 +131,10 @@ Implement the 'Guess The Number' game and pass it to your friends!
 # Summary
 To implement the 'Guess The Number' game, we can apply several things we have learned so far,
 including using variables, functions, loops and many more.
+
+# Ideas
+Further ideas to improve the program:
+* Let the user decide if he wants to play the game again
+* Blink the LED's if the user has lost (or won)
+* Let the user input the maximum number (range)
+* Let the user input the number of trials
