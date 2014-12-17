@@ -160,3 +160,4 @@ Further ideas to improve the program:
 * Blink the LED's if the user has lost (or won)
 * Let the user input the maximum number (range)
 * Let the user input the number of trials
+* ```rand()``` is only a pseudo random number generator. You might initialize it with ```srand((unsigned) time(&t));``` to have a more random start.
