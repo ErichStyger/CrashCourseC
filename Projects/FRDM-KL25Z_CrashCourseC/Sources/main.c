@@ -108,7 +108,7 @@ void GuessTheNumber(int maxVal, int nofTries) {
       break;
     }
   }
-  if (i<nofTries) {
+  if (i<=nofTries) {
     printf("*** You win! Congratulations!\n");
   } else {
     printf("*** You lost! The secret number was %d\n", secretNumber);

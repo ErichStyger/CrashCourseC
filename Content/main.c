@@ -3,80 +3,57 @@
 #include "LEDB.h"   /* interface to blue LED */
 #include "LEDR.h"   /* interface to red LED */
 #include <stdio.h>  /* interface to standard I/O */
+#include <stdlib.h>
 
-static void while0(void) {
-  int i;
+/* Read a number from the console and return it */
+static int readNumber(void) {
+  int res, number;
 
-  i = 0;
-  do {
-    printf("i: %d\r\n", i);
-    i++;
-  } while(i<3);
-}
-
-static void while1(void) {
-  int i;
-
-  i = 0;
-  while (i<3) {
-    printf("i: %d\r\n", i);
-    i++;
+  printf("Enter number:\r\n");
+  res = scanf("%d", &number);
+  while('\n' != getchar()); /* skip rest of input until '\n' */
+  if (res==1) { /* one value read */
+    return number;
+  } else {
+    printf("ERROR: Wrong number input!\r\n");
+    return -1;
   }
 }
 
-static void for0(void) {
-  int i, sum;
+static void GuessTheNumber(int maxVal, int nofTries) {
+  int secretNumber, val;
+  int i;
 
-  sum = 0;
-  for(i=0;i<5;i++) {
-    sum += i;
-    printf("i: %d, sum: %d\r\n", i, sum);
-    if (sum==3) {
-      printf("break!\r\n", i, sum);
+  printf("------------------------------\nGuess The Number Game\n------------------------------\n");
+  printf("Guess the secret number between 0 and %d. You can guess %d times!\n", maxVal, nofTries);
+  secretNumber = rand(); /* needs #include <stdlib.h> */
+  secretNumber %= maxVal; /* make it inside limits (0..maxVal) */
+  for(i=1;i<=nofTries;i++) {
+    printf("Trial %d of %d: ", i, nofTries);
+    val = readNumber();
+    if (val<0 || val>maxVal) {
+      printf("*** ERROR: number must be between %d and %d!\n", 0, maxVal);
+    } else if (val<secretNumber) {
+      printf("*** Your guess was too low!\n");
+    } else if (val>secretNumber) {
+      printf("*** Your guess was too high!\n");
+    } else {
+      printf("*** You found it!\n");
       break;
     }
   }
-  printf("loop end!\r\n", i, sum);
-}
-
-static void for1(void) {
-  int i, sum;
-
-  sum = 0;
-  for(i=0;i<10;i++) {
-    sum += i;
-    printf("i: %d, sum: %d\r\n", i, sum);
-    if (sum>10) {
-      printf("break!\r\n", i, sum);
-      break;
-    }
-    if (i==3) {
-      printf("continue!\r\n", i, sum);
-      continue;
-    }
-    printf("jump back.\r\n", i, sum);
+  if (i<=nofTries) {
+    printf("*** You win! Congratulations!\n");
+  } else {
+    printf("*** You lost! The secret number was %d\n", secretNumber);
   }
-  printf("loop ended!\r\n", i, sum);
 }
 
 int main(void) {
   PE_low_level_init(); /* low level driver initialization, do not remove */
 
   for(;;) {
-    printf("While0:\r\n");
-    while0();
-
-    printf("While1:\r\n");
-    while1();
-
-    printf("for0:\r\n");
-    for0();
-
-    printf("for1:\r\n");
-    for1();
-
-    WAIT1_Waitms(500);
-    LEDR_Neg();
+    GuessTheNumber(100, 5);
   }
   /* do not leave main! */
   return 0;
