@@ -106,6 +106,7 @@ void GuessTheNumber(int maxVal, int nofTries) {
     /* check if number is too high */
     /* else: it must be the secret number! */
   /* end loop */
+}
 ```
 Use ```printf()``` to inform the user about the progress and result of the game!
 
