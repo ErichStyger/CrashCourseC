@@ -97,7 +97,7 @@ void GuessTheNumber(int maxVal, int nofTries) {
   for(i=1;i<=nofTries;i++) {
     printf("Trial %d of %d: ", i, nofTries);
     val = readNumber();
-    if (val<0 || val>maxVal) {
+    if ((val<0) || (val>maxVal)) {
       printf("*** ERROR: number must be between %d and %d!\n", 0, maxVal);
     } else if (val<secretNumber) {
       printf("*** Your guess was too low!\n");
